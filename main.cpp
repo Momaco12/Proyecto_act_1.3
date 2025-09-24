@@ -89,7 +89,9 @@ int main() {
                 continue; // Evita acceder a índices fuera de rango
             }
             Log reg = reportes[j];
+            cout << reg.getMes() << " " << reg.getDia() << " " << reg.getTiempo() << " " << reg.getIp() << " " << reg.getLog() << endl;
             fout << reg.getMes() << " " << reg.getDia() << " " << reg.getTiempo() << " " << reg.getIp() << " " << reg.getLog() << endl;
+
         }
 
         fout.close(); // Cerrar el archivo de salida
